@@ -7,21 +7,19 @@
 <StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controllers.RegularUserController">
     <children>
         <AnchorPane>
-            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <children>
-                    <Label alignment="CENTER" prefHeight="58.0" prefWidth="481.0" text="&lt;&lt;&lt;REGULAR MENU&gt;&gt;&gt;" textAlignment="CENTER">
+                    <Label text="Regular User Menu" textAlignment="CENTER">
                         <font>
-                            <Font size="40.0" />
+                            <Font size="24.0" />
                         </font>
                     </Label>
-                    <VBox alignment="CENTER" spacing="20.0">
-                        <children>
-                            <Button fx:id="bookTicketButton" mnemonicParsing="false" onAction="#onBookTicketButtonClicked" prefHeight="45.0" prefWidth="126.0" text="1. Book Ticket" />
-                            <Button fx:id="cancelBookingButton" mnemonicParsing="false" onAction="#onCancelBookingButtonClicked" prefHeight="45.0" prefWidth="133.0" text="2. Cancel Booking" />
-                            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onExitButtonClicked" prefHeight="45.0" prefWidth="126.0" text="3. Exit" />
-                            <Button fx:id="goBackToLoginButton" mnemonicParsing="false" onAction="#onGoBackToLoginButtonClicked" prefHeight="45.0" prefWidth="133.0" text="4. Go Back To Login" />
-                        </children>
-                    </VBox>
+                    <ListView fx:id="movieListView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                    <TextField fx:id="seatsTextField" promptText="Enter number of seats" VBox.vgrow="ALWAYS" />
+                    <Button fx:id="bookButton" onAction="#onBookButtonClicked" text="Book Tickets" maxWidth="Infinity" />
+                    <Button fx:id="cancelButton" onAction="#onCancelButtonClicked" text="Cancel Tickets" maxWidth="Infinity" />
+                    <Button fx:id="logoutButton" onAction="#onLogoutButtonClicked" text="Logout" maxWidth="Infinity" />
+                    <Label fx:id="feedbackLabel" textFill="RED" />
                 </children>
             </VBox>
         </AnchorPane>
