@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controllers.CancelBookingController">
+    <children>
+        <AnchorPane>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label alignment="CENTER" prefHeight="63.0" prefWidth="600.0" text="&lt;&lt;&lt;&lt;&lt;Cancel System&gt;&gt;&gt;&gt;&gt;">
+                        <font>
+                            <Font size="40.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="CENTER" spacing="20.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="20.0">
+                                <children>
+                                    <Label text="Movie:1">
+                                        <font>
+                                            <Font size="30.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="cancelSeatsForMovie1Button" mnemonicParsing="false" onAction="#onCancelSeatsForMovie1Button" prefHeight="32.0" prefWidth="89.0" text="Cancel Seats" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" spacing="20.0">
+                                <children>
+                                    <Label text="Movie:2">
+                                        <font>
+                                            <Font size="30.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="cancelSeatsForMovie2Button" mnemonicParsing="false" onAction="#onCancelSeatsForMovie2ButtonClicked" prefHeight="32.0" prefWidth="89.0" text="Cancel Seats" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" spacing="20.0">
+                                <children>
+                                    <Label text="Movie:3">
+                                        <font>
+                                            <Font size="30.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="cancelSeatsForMovie3Button" mnemonicParsing="false" onAction="#onCancelSeatsForMovie3ButtonClicked" prefHeight="32.0" prefWidth="89.0" text="Cancel Seats" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" spacing="20.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="20.0">
+                                <children>
+                                    <Label text="Movie:4">
+                                        <font>
+                                            <Font size="30.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="cancelSeatsForMovie4Button" mnemonicParsing="false" onAction="#cancelSeatsForMovie4ButtonClicked" prefHeight="32.0" prefWidth="89.0" text="Cancel Seats" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" spacing="20.0">
+                                <children>
+                                    <Label text="Movie:5">
+                                        <font>
+                                            <Font size="30.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="cancelSeatsForMovie5Button" mnemonicParsing="false" onAction="#onCancelSeatsForMovie5ButtonClicked" prefHeight="32.0" prefWidth="89.0" text="Cancel Seats" />
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#onGoBackButtonClicked" text="GO BACK" />
+                </children>
+            </VBox>
+        </AnchorPane>
+    </children>
+</StackPane>

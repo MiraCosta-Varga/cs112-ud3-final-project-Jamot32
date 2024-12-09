@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controllers.AdminUserController">
+    <children>
+        <AnchorPane>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="481.0" text="&lt;&lt;&lt;&lt; ADMIN MENU &gt;&gt;&gt;&gt;" textAlignment="CENTER">
+                        <font>
+                            <Font size="40.0" />
+                        </font>
+                    </Label>
+                    <Label prefHeight="50.0" prefWidth="0.0" />
+
+                    <TextField fx:id="movieTitleField" promptText="Enter title" />
+                    <TextField fx:id="movieDirectorField" promptText="Enter director" />
+                    <TextField fx:id="movieGenreField" promptText="Enter genre" />
+                    <TextField fx:id="movieSeatsField" promptText="Enter number of seats" />
+
+                    <Button fx:id="addMovieButton" onAction="#onAddMovieButtonClicked" prefHeight="45.0" prefWidth="135.0" text="Add Movie" wrapText="true" />
+                    <Button fx:id="updateMovieButton" onAction="#onUpdateMovieButtonClicked" prefHeight="45.0" prefWidth="135.0" text="Update Movie Details" wrapText="true" />
+                    <Button fx:id="exitButton" onAction="#onExitButtonClicked" prefHeight="45.0" prefWidth="135.0" text="Exit" wrapText="true" />
+                    <Button fx:id="goBackToLoginButton" onAction="#onGoBackToLoginButtonClicked" prefHeight="45.0" prefWidth="135.0" text="Go Back To Login" wrapText="true" />
+
+                    <ListView fx:id="movieListView" prefHeight="200.0" prefWidth="200.0" />
+                </children>
+            </VBox>
+        </AnchorPane>
+    </children>
+</StackPane>
