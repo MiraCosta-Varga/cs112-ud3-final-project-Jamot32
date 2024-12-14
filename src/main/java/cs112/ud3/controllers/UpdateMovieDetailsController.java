@@ -77,14 +77,14 @@ public class UpdateMovieDetailsController {
     @FXML
     private void onExitButtonClicked(ActionEvent event) {
         System.out.println("Exit button clicked");
-        // Add your logic to quit the application or close the current window
+
     }
 
     // Event handler for Go Back To Login button
     @FXML
     private void onGoBackToLoginButtonClicked(ActionEvent event) {
         System.out.println("Go Back To Login button clicked");
-        // Add your logic to navigate back to the login view or perform other actions
+
     }
 
     // Helper methods to clear fields

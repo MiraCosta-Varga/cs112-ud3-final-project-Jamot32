@@ -1,18 +1,41 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=17479406)
 # Unit Deliverable 3 - Final Project
 
-Feel free to edit this file to contain a description of your project, as well as your UML diagram and GUI wireframe images. You can simply add them to your project directory and use a relative path, or upload them to [imgur](https://imgur.com/upload).
+<h1>Overview</h1>
+    This project is a movie creator application developed using the UD3 programming environment. 
+    It features a login system with different views for admin and regular users, and it includes a functionality to display movies.
 
-Use [Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d) to format appropriately. 
+<h1>Project Details</h1>
+Project Name: Movie,###########
+Creator Author: Ryan Espinoza & Siyoung Park, 
+Date: 12/14/24
 
-## Demo
+<h1>Project Description</h1>
+    The Movie Creator project is designed to allow users to log in as either an admin or a regular user.
+    Admin users have access to specific admin functionalities, while regular users can view and interact with the movie database. 
+    The application includes the following views:
 
-Place the animated image of your project demo here!
+---Admin User View
 
-## UML Diagram
+---Regular User View
 
-Place your UML diagram image here! Make sure they're updated to be accurate to your final project!
+---Show Movies View
 
-## Wireframe
+<h1>Features</h1>
+---Admin Login: Validates admin credentials and loads the admin user interface.
 
-Place your wireframe image(s) here! Make sure they're updated to be accurate to your final project!
+---Regular User Login: Validates regular user credentials and loads the regular user interface.
+
+---Show Movies: Loads the interface to display available movies.
+
+---Exit Application: Closes the application.
+
+<h1>UML Diagram</h1>
+<img src="Screenshot%202024-12-14%20112404.png">
+<h1>Wireframe</h1>
+<img src="Screenshot%202024-12-14%20105641.png">
+<img src="Screenshot%202024-12-14%20105706.png">
+<img src="Screenshot%202024-12-14%20105715.png">
+<img src="Screenshot%202024-12-14%20105848.png">
+
+

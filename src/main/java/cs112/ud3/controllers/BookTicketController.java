@@ -69,6 +69,5 @@ public class BookTicketController {
     @FXML
     private void onGoBackButtonClicked(ActionEvent event) {
         System.out.println("Go Back button clicked");
-        // Add your logic to navigate back to the previous view or perform other actions
     }
 }

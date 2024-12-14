@@ -31,7 +31,7 @@ public class LogInMenuController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        if (validateAdminCredentials(username, password)) {
+        if (validateAdminCredentials(username, password )) {
             try {
             } catch (IOException e) {
                 feedbackLabel.setText("Failed to load admin view.");
