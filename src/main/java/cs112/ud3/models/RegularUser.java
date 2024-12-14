@@ -1,11 +1,9 @@
 package cs112.ud3.models;
-
 public class RegularUser extends User {
     // Constructor for RegularUser
     public RegularUser(String username, String password) {
         super(username, password);
     }
-
     // Book tickets for a movie
     @Override
     public void bookTicket(Movie movie, int seats) throws MovieNotAvailableException {
@@ -17,7 +15,6 @@ public class RegularUser extends User {
             System.out.println("Cannot book more than " + maxBookings + " tickets.");
         }
     }
-
     // Cancel tickets for a movie
     @Override
     public void cancelBooking(Movie movie, int seats) {
