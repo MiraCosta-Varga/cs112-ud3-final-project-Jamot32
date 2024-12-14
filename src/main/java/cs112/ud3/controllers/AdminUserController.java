@@ -2,14 +2,12 @@ package cs112.ud3.controllers;
 
 import cs112.ud3.Main;
 import cs112.ud3.models.Movie;
-import cs112.ud3.models.MovieManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.collections.ObservableList;
-import javafx.stage.Stage;
 import java.io.IOException;
 
 public class AdminUserController {
@@ -45,7 +43,6 @@ public class AdminUserController {
 
     @FXML
     private void initialize() {
-        movieList = MovieManager.getInstance().getMovieList();
         movieListView.setItems(movieList);
     }
 
@@ -92,7 +89,6 @@ public class AdminUserController {
         }
 
         Movie newMovie = new Movie(title, director, genre, seats);
-        MovieManager.getInstance().addMovie(newMovie);
         movieListView.refresh();
         System.out.println("Added new movie: " + title);
 
@@ -108,7 +104,6 @@ public class AdminUserController {
     @FXML
     private void onGoBackToLoginButtonClicked(ActionEvent event) {
         try {
-            Main.loadView("logInMenu-view.fxml", 400, 600);  // Provide necessary width and height
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Failed to go back to login view.");

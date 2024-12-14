@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import java.io.IOException;
-import javafx.stage.Stage;
 
 public class LogInMenuController {
 
@@ -25,12 +24,6 @@ public class LogInMenuController {
     private Button regularLoginButton;
 
     @FXML
-    private Button showMoviesButton;
-
-    @FXML
-    private Button exitButton;
-
-    @FXML
     private Label feedbackLabel;
 
     @FXML
@@ -40,7 +33,6 @@ public class LogInMenuController {
 
         if (validateAdminCredentials(username, password)) {
             try {
-                Main.loadView("adminUser-view.fxml", 600, 800);
             } catch (IOException e) {
                 feedbackLabel.setText("Failed to load admin view.");
                 e.printStackTrace();
@@ -57,7 +49,6 @@ public class LogInMenuController {
 
         if (validateRegularUserCredentials(username, password)) {
             try {
-                Main.loadView("regularUser-view.fxml", 400, 600);
             } catch (IOException e) {
                 feedbackLabel.setText("Failed to load regular user view.");
                 e.printStackTrace();
@@ -65,22 +56,6 @@ public class LogInMenuController {
         } else {
             feedbackLabel.setText("Invalid regular user credentials.");
         }
-    }
-
-    @FXML
-    private void onShowMoviesButtonClicked(ActionEvent event) {
-        try {
-            Main.loadView("showMovies-view.fxml", 600, 800);  // Ensure the correct path
-        } catch (IOException e) {
-            feedbackLabel.setText("Failed to load show movies view.");
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    private void onExitButtonClicked(ActionEvent event) {
-        Stage stage = (Stage) exitButton.getScene().getWindow();
-        stage.close();
     }
 
     private boolean validateAdminCredentials(String username, String password) {
