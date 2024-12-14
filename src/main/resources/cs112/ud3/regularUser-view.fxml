@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controllers.RegularUserController">
+    <children>
+        <AnchorPane>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label text="Regular User Menu" textAlignment="CENTER">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Label>
+                    <ListView fx:id="movieListView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                    <TextField fx:id="seatsTextField" promptText="Enter number of seats" VBox.vgrow="ALWAYS" />
+                    <Button fx:id="bookButton" onAction="#onBookButtonClicked" text="Book Tickets" maxWidth="Infinity" />
+                    <Button fx:id="cancelButton" onAction="#onCancelButtonClicked" text="Cancel Tickets" maxWidth="Infinity" />
+                    <Button fx:id="logoutButton" onAction="#onLogoutButtonClicked" text="Logout" maxWidth="Infinity" />
+                    <Label fx:id="feedbackLabel" textFill="RED" />
+                </children>
+            </VBox>
+        </AnchorPane>
+    </children>
+</StackPane>

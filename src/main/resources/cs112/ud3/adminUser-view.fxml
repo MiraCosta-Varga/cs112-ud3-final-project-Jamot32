@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud3.controllers.AdminUserController">
+    <children>
+        <AnchorPane>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label text="&lt;&lt;&lt;&lt; ADMIN MENU &gt;&gt;&gt;&gt;" textAlignment="CENTER">
+                        <font>
+                            <Font size="40.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="movieTitleField" promptText="Enter title" VBox.vgrow="ALWAYS" />
+                    <TextField fx:id="movieDirectorField" promptText="Enter director" VBox.vgrow="ALWAYS" />
+                    <TextField fx:id="movieGenreField" promptText="Enter genre" VBox.vgrow="ALWAYS" />
+                    <TextField fx:id="movieSeatsField" promptText="Enter number of seats" VBox.vgrow="ALWAYS" />
+                    <Button fx:id="addMovieButton" onAction="#onAddMovieButtonClicked" text="Add Movie" maxWidth="Infinity" />
+                    <Button fx:id="updateMovieButton" onAction="#onUpdateMovieButtonClicked" text="Update Movie Details" maxWidth="Infinity" />
+                    <Button fx:id="exitButton" onAction="#onExitButtonClicked" text="Exit" maxWidth="Infinity" />
+                    <Button fx:id="goBackToLoginButton" onAction="#onGoBackToLoginButtonClicked" text="Go Back To Login" maxWidth="Infinity" />
+                    <ListView fx:id="movieListView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                </children>
+            </VBox>
+        </AnchorPane>
+    </children>
+</StackPane>
